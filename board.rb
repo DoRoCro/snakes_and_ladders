@@ -7,4 +7,10 @@ class Board
     @size = @squares.size - 1
   end
 
+
+  def take_a_turn
+    move(die.roll)
+  end
+
+
 end

@@ -1,6 +1,7 @@
 require('minitest/rg')
 require('minitest/autorun')
 require_relative('../player.rb')
+require_relative('../die.rb')
 
 class TestPlayer < MiniTest::Test
 
@@ -24,4 +25,6 @@ class TestPlayer < MiniTest::Test
     result = player1.move(-2)
     assert_equal(0, player1.position )
   end
+
+
 end

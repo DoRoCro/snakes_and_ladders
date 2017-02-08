@@ -9,6 +9,19 @@ class TestDie < MiniTest::Test
     assert_equal( 3, die.value )
   end
 
-  def test_die_roll_has_value
+  def test_roll_die
+    die = Die.new( 6 )
+    puts "Die random test roll begins:"
+    puts die.roll
+    puts die.roll
+    puts die.roll
+    puts die.roll
+    puts die.roll
+    puts die.roll
+    puts die.roll
+    puts die.roll
+    puts die.roll
+    puts die.roll
   end
+
 end

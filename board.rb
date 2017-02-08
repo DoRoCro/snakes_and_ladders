@@ -1,5 +1,5 @@
 class Board
-  attr_reader :size
+  attr_reader :size, :squares
   def initialize (edge_of_square)
     # @size = size
     @squares = Array.new
@@ -8,8 +8,8 @@ class Board
     @size = @squares.size - 1
   end
 
-  def new_board
-    return
-  end
+  # def new_board
+  #   return
+  # end
 
 end

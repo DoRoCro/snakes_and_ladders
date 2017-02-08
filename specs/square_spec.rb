@@ -4,9 +4,9 @@ require_relative('../square')
 
 class TestSquare < MiniTest::Test
 
-  def test_new_square
-    square = Square.new(1)
-    assert_equal( 1 , square.position )
+  def test_new_square_return_value
+    square = Square.new()
+    assert_equal( true , square.exists )
   end
 
 end

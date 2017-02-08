@@ -1,9 +1,9 @@
 class Square
 
-  attr_reader :position
+  attr_reader :exists
 
-  def initialize ( position )
-    @position = position
+  def initialize (  )
+    @exists = true
   end
 
 end

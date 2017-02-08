@@ -7,6 +7,8 @@ class Player
     @position = 0
   end
 
-
+  def move(step)
+    @position += step
+  end
 
 end

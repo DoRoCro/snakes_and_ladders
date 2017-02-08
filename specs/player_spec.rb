@@ -12,4 +12,16 @@ class TestPlayer < MiniTest::Test
     assert_equal( 0 , Player.new("Player1").position )
   end
 
+  def test_player_can_move_forward
+    player1 = Player.new("Player1")
+    result = player1.move(2)
+    assert_equal(2, player1.position )
+  end
+
+  def test_player_can_move_back
+    player1 = Player.new("Player1")
+    result = player1.move(2)
+    result = player1.move(-2)
+    assert_equal(0, player1.position )
+  end
 end

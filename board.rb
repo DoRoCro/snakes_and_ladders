@@ -3,8 +3,8 @@ class Board
   def initialize (edge_of_square)
     # @size = size
     @squares = Array.new
-    @squares[1] = "start"
-    @squares[edge_of_square ** 2] = "win"
+    @squares[1] = Square.new(1)
+    @squares[edge_of_square ** 2] = Square.new(edge_of_square ** 2)
     @size = @squares.size - 1
   end
 
